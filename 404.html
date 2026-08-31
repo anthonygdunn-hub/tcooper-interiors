@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page moved | T Cooper Interiors</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/styles.css">
+<style>
+body { margin: 0; }
+.moved { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; padding: 2rem; text-align: center; font-family: Jost, system-ui, sans-serif; }
+.moved h1 { font-size: 1.75rem; margin: 0; max-width: 24rem; }
+.moved p { margin: 0; max-width: 26rem; opacity: .8; }
+.moved .links { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin-top: .5rem; }
+.moved a { padding: .7rem 1.2rem; border: 1px solid currentColor; border-radius: 4px; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="moved">
+<h1>That page has moved</h1>
+<p>The site was rebuilt as a single page. Taking you to the right part of it now.</p>
+<div class="links">
+<a href="/">Home</a>
+<a href="/#services">Services</a>
+<a href="/#gallery">Our work</a>
+<a href="/#quote">Get a quote</a>
+<a href="tel:01252500863">01252 500 863</a>
+</div>
+</div>
+<script>
+var map = {
+  "our-services": "#services",
+  "services": "#services",
+  "kitchens": "#services",
+  "bathrooms": "#services",
+  "tiling": "#services",
+  "carpentry": "#services",
+  "flooring": "#services",
+  "copy-of-tiling": "#services",
+  "copy-of-carpentry": "#services",
+  "home-improvments": "#services",
+  "about": "#about",
+  "about-us": "#about",
+  "reviews": "#reviews",
+  "gallery": "#gallery",
+  "our-work": "#gallery",
+  "contact": "#quote",
+  "contact-us": "#quote",
+  "quote": "#quote"
+};
+var slug = location.pathname.replace(/^[/]+|[/]+$/g, "").toLowerCase();
+var target = map[slug] || "";
+setTimeout(function () { location.replace("/" + target); }, 1200);
+</script>
+</body>
+</html>
