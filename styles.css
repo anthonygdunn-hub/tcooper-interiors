@@ -84,7 +84,7 @@ p { margin: 0 0 1em; }
 .container.two-col { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
 
 /* Top contact bar */
-.topbar { background: var(--ink); color: #f2eef1; font-size: 13px; }
+.topbar { background: var(--deep); color: var(--on-deep-soft); font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: 1.2px; }
 .topbar-inner { max-width: 1160px; margin: 0 auto; padding: 8px 24px; display: flex; gap: 24px; justify-content: flex-end; }
 .topbar-item:hover { color: var(--gold); }
 
@@ -96,14 +96,14 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--border);
 }
 .header-inner {
-  max-width: 1160px; margin: 0 auto; padding: 14px 24px;
+  max-width: 1160px; margin: 0 auto; padding: 18px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .logo { font-family: var(--font-logo); font-size: 22px; letter-spacing: 0.5px; white-space: nowrap; }
 .logo-dark { color: var(--ink); font-weight: 500; }
 .logo-accent { color: var(--plum); font-weight: 400; }
-.main-nav { display: flex; gap: 28px; flex: 1; justify-content: center; }
-.main-nav a { font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+.main-nav { display: flex; gap: 20px; flex: 1; justify-content: center; }
+.main-nav a { font-size: 14px; font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
 .main-nav a:hover { color: var(--plum); }
 .header-cta { display: flex; gap: 10px; }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 6px; }
@@ -111,7 +111,7 @@ p { margin: 0 0 1em; }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 10px 20px; border-radius: 999px; font-weight: 600; font-size: 14px;
+  padding: 11px 18px; border-radius: 2px; font-weight: 600; font-size: 14px;
   border: 1.5px solid transparent; cursor: pointer; transition: all .18s ease; white-space: nowrap;
 }
 .btn-primary { background: var(--plum); color: #fff; }
