@@ -22,11 +22,11 @@ mainNav.querySelectorAll("a").forEach(a =>
 // ---- Fallback content (used if Supabase is unreachable) ----
 const FALLBACK_GALLERY = [
   { title: "Modern Family Kitchen", category: "Kitchen", location: "Farnborough, Hampshire",
-    image_url: "https://static.wixstatic.com/media/7453ce_7b5661aec38c47a7a32a2e012ec7311d~mv2.jpg/v1/fill/w_900,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/kitchen.jpg" },
+    image_url: "https://acdpgarasgfhvupzsbxf.supabase.co/storage/v1/object/public/gallery/site/kitchen.jpg" },
   { title: "Contemporary Bathroom", category: "Bathroom", location: "Hampshire",
-    image_url: "https://static.wixstatic.com/media/7453ce_6e937f2988f148cfaafb5ab3a7f0dd49~mv2.jpg/v1/fill/w_900,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bathroom.jpg" },
+    image_url: "https://acdpgarasgfhvupzsbxf.supabase.co/storage/v1/object/public/gallery/site/bathroom.jpg" },
   { title: "Bespoke Carpentry & Doors", category: "Carpentry", location: "Surrey",
-    image_url: "https://static.wixstatic.com/media/7453ce_9044bd31a47d47c2b472401143dec9f1~mv2_d_2738_1825_s_2.jpg/v1/fill/w_900,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/carpentry.jpg" }
+    image_url: "https://acdpgarasgfhvupzsbxf.supabase.co/storage/v1/object/public/gallery/site/carpentry.jpg" }
 ];
 
 const FALLBACK_REVIEWS = [
