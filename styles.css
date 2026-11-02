@@ -65,6 +65,7 @@
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
 html { scroll-behavior: smooth; }
+html, body { overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -253,10 +254,14 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 680px) {
   .topbar-inner { justify-content: center; flex-wrap: wrap; gap: 12px; font-size: 12px; }
-  .main-nav, .header-cta .btn-ghost { display: none; }
+  .main-nav, .header-cta { display: none; }
   .main-nav.open {
     display: flex; position: absolute; top: 100%; left: 0; right: 0; background: var(--paper);
     flex-direction: column; padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--border);
+  }
+  .main-nav.open .mobile-nav-cta {
+    color: #fff; background: var(--plum); text-align: center; padding: 10px 20px;
+    border-radius: 999px; font-weight: 600;
   }
   .nav-toggle { display: flex; }
   .form-row { grid-template-columns: 1fr; }
